@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Audio';
+    src: url('assets/fonts/Audiowide-Regular.ttf');
+}
+
+*, *::before, *::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: .9rem;
+    font-family: 'Audio';
+}
