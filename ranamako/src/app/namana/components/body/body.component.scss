@@ -1,0 +1,15 @@
+.container_formulaire {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 61%;
+    height: 3rem;
+    padding: 0 .7rem;
+}
+
+@media screen and (max-width: 767px) {
+    .container_formulaire {
+        width: 100%;
+    }
+}
