@@ -1,6 +1,6 @@
 <div class="formulaire">
-    <textarea [formControl]="requestForm"></textarea>
-    <button>
-        <img src="assets/images/send.svg" width="31" height="31">
+    <textarea [formControl]="requestCtrl"></textarea>
+    <button [disabled]="requestCtrl.invalid" (click)="onSend()" type="button">
+        <img ngSrc="assets/images/send.svg" width="31" height="31" priority>
     </button>
 </div>

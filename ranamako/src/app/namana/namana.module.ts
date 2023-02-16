@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { NamanaRoutingModule } from './namana-routing.module';
 import { BodyComponent } from './components/body/body.component';
 import { FormulaireComponent } from './components/formulaire/formulaire.component';
-import { MessageComponent } from './components/message/message.component';
 import { NamanaService } from './services/namana.service';
 
 
@@ -13,12 +13,13 @@ import { NamanaService } from './services/namana.service';
   declarations: [
     BodyComponent,
     FormulaireComponent,
-    MessageComponent
   ],
   imports: [
     CommonModule,
     NamanaRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgOptimizedImage
   ],
   providers: [
     NamanaService

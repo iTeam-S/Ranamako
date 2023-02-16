@@ -1,6 +1,20 @@
 <div class="container_message">
-    <app-message></app-message>
+    <ng-container *ngIf="messages">
+        <div *ngFor="let message of messages"
+            [class]="'wrapper ' + (message.ia && 'ia')"
+            [style]="message.ia ? 'margin-bottom: 1rem;': ''">
+            <div [class]="'chat '+ (message.ia ? 'chat_ia': 'chat_user')" [id]="'chat_' + message.uniqueId">
+                <div class="profile">
+                <img [src]="imagesPath + (message.ia ? '/logo.png': '/user.svg')"/>
+                </div>
+                <div class="message" [id]="message.uniqueId ?? ''">{{ message.texte }}</div>
+            </div>
+        </div>
+    </ng-container>
 </div>
 <div class="container_formulaire">
-    <app-formulaire></app-formulaire>
+    <div class="body_formulaire">
+        <app-formulaire (textRequest)="onListenTextRequest($event)"></app-formulaire>
+    </div>
+    <div class="cache_formulaire"></div>
 </div>

@@ -1,4 +1,35 @@
 .container {
     display: flex;
     width: 100%;
+    .header {
+        position: fixed;
+        width: 100%;
+        padding: .7rem;
+        display: flex;
+        justify-content: center;
+        box-shadow: 1px 4px 5px 1px #33334ea8;
+        border-radius: 0 0 7px 7px;
+        background-color: #40414f;
+        z-index: 1000;
+        .header_logo {
+            display: flex;
+            align-items: center;
+            span, img {
+                margin: .3rem;
+            }
+
+            img {
+                filter: drop-shadow(-1px 2px 3px #a3b9ec46);
+                background-color: #e4e4e4f1;
+                border-radius: 50%;
+                padding: 1px;
+            }
+
+            span {
+                font-size: 2.1rem;
+                color: #a3b9ece7;
+                filter: drop-shadow(-1px 1px 2px #a3b9ec46);
+            }
+        }
+    }
 }

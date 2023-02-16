@@ -9,19 +9,20 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
 export class FormulaireComponent implements OnInit {
 
   @Output() textRequest = new EventEmitter<string>();
-  requestForm!: FormControl;
+  requestCtrl!: FormControl;
 
   constructor(
     private formbuilder: FormBuilder
   ) { }
 
   ngOnInit(): void {
-    this.requestForm = this.formbuilder.control('', Validators.required);
+    this.requestCtrl = this.formbuilder.control('', Validators.required);
   }
 
   onSend(): void {
-    const donnees = this.requestForm.value as string;
+    const donnees = this.requestCtrl.value as string;
     if(!donnees) return;
-    this.textRequest.emit(donnees);
+    this.textRequest.emit(donnees);    
+    this.requestCtrl.reset();
   }
 }
