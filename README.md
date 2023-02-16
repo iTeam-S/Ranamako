@@ -9,7 +9,7 @@
   
 - [ ] <b>Description</b>
   - Ranamako est un bot IA qui utilise l'API de OpenAI
-  - Il fonctionne sur le web aussi que mobile
+  - Il fonctionne sur le web aussi que [mobile](https://github.com/iTeam-S/ranamako/releases/tag/v1.0.0)
   - Build by [iTeam-$ community](https://iteam-s.mg)
   - and we happy 😊 ...
 
