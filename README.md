@@ -1,7 +1,7 @@
 # Ranamako
 
   <p align="center">
-      <a href="https://github.com/iTeam-S/ranamako" target="blank">
+      <a href="https://github.com/iTeam-S/ranamako/blob/main/Ranamako.jpeg" target="blank">
           <img src="Ranamako.jpeg" width="231" alt="Ranamako" />
           <img src="Ranamako_web.png" width="531" alt="Ranamako" />
       </a>
