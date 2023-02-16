@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Ranamako</string>
+    <string name="title_activity_main">Ranamako</string>
+    <string name="package_name">com.ranamako.app</string>
+    <string name="custom_url_scheme">com.ranamako.app</string>
+</resources>
